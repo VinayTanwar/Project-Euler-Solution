@@ -1,0 +1,16 @@
+t = int(input().strip())
+for a0 in range(t):
+    n = int(input().strip())
+    if (n<=1):
+        print(0)
+    else: 
+        result=0
+        a=0
+        c=1
+        d=0
+        while(d<=n):
+            d=a+c
+            a,c=c,d
+            if d%2==0 and d<=n:
+                result+=d
+        print(result)  
